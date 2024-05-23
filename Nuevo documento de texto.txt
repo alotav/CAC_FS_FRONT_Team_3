@@ -1,0 +1,23 @@
+Chocolate
+
+
+
+Index.html listo
+index.js listo
+style.css listo 
+novedades.html listo    Solo hay 3 imagenes que se envian al indes desde java
+carpeta imagenes (img)
+
+
+
+
+Crear 2 paginas (contacto y Nosotros)
+Index muestreo general
+Novedades, subir mas imagenes y lore
+Contacto. Formulario
+Nosotros. Historia, mision, vision y objetivos.
+
+Agregar logo
+
+Aloonso Novedades y Contacto
+Franco Index y Nosotros.
