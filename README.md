@@ -1,0 +1,6 @@
+![image](https://github.com/alotav/CAC_FS_FRONT_Team_3/assets/31638440/633df0f7-f783-4d8f-b991-c9c84dee3c4d)
+![image](https://github.com/alotav/CAC_FS_FRONT_Team_3/assets/31638440/da1158a4-eeef-4589-8547-168fea088328)
+![image](https://github.com/alotav/CAC_FS_FRONT_Team_3/assets/31638440/682fe8ff-0131-4c97-ba3c-9a455fefdb4b)
+![image](https://github.com/alotav/CAC_FS_FRONT_Team_3/assets/31638440/8b6e50c4-057f-42e3-9679-95b6da83bc9e)
+![image](https://github.com/alotav/CAC_FS_FRONT_Team_3/assets/31638440/e5f9752d-d409-4383-8d63-7e353770efa7)
+![image](https://github.com/alotav/CAC_FS_FRONT_Team_3/assets/31638440/7d297c1d-3dd9-4cd5-9686-d97858ca07e5)
