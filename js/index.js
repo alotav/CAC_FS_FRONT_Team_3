@@ -63,3 +63,5 @@ function mostrarImagenSiguiente() {
 
 // Llamar a la función para cargar la última imagen y su texto cuando la página cargue
 window.onload = cargarUltimaImagen;
+
+
