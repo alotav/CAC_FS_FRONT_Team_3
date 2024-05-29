@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>SubdistribuidoraGas</title>
+    <title>ChocolatesDeEnsueños</title>
 </head>
 
 <body>
-    <div class="contenedorPrincipal">
-        <header class="barraSuperior">
+    <header class="contenedorPrincipal">
+        <div class="barraSuperior">
             <div class="logo">
                 <img src="insertar_logo.png" alt="Logo de Chocolates de Ensueños">
             </div>
@@ -19,55 +19,60 @@
                     <li><a href="#">Chocolates de Ensueños</a></li>
                 </ul>
             </nav>
-        </header>
-        <header class="segundaBarra">
+        </div>
+        <div class="menuconteiner">           
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu">
+            </label>
             <!-- Segunda barra con opciones -->
-            <nav class="opcionesBlanco">
+            <nav class="navbar">
                 <ul>
+                    <li><a href="#">Inicio</a></li>
                     <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Facturas</a></li>
                     <li><a href="#">Novedades</a></li>
-                    <li><a href="#">Normativa</a></li>
-                    <li><a href="#">Matriculados</a></li>
-                    <li><a href="#">Seguridad</a></li>
-                    <li><a href="#">Clientes</a></li>
                     <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Perfil</a></li>
-                    <li><a href="#">Login</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
         <div class="contenidoPrincipal">
             <section>
-                <p class="bold-text">¡Bienvenidos a Oliveros Gas SAPEM! Somos una empresa líder en la distribución de gas natural. Ofrecemos
-                    servicios de calidad para satisfacer las necesidades de nuestros clientes. Contamos con un equipo altamente
-                    calificado y comprometido para brindar un servicio excepcional.</p>
-                <p class="bold-text">En nuestra sección de novedades, mantente al tanto de las últimas noticias y actualizaciones sobre nuestra
+                <p class="bold-text">Bienvenidos a Chocolates de Ensueños, donde la pasión por el cacao se convierte en arte.
+                     Nos especializamos en la fabricación artesanal de chocolates finos, utilizando ingredientes de la más alta calidad 
+                     y métodos tradicionales. Nuestro compromiso es ofrecer una experiencia de sabor única, combinando innovación y tradición en cada bocado.
+                      Descubre la magia del chocolate con Chocolates de Ensueños.</p>
+                <p class="bold-text">En nuestra sección de novedades, mantente al tanto de las últimas noticias y
+                    actualizaciones sobre nuestra
                     empresa y la industria del gas.</p>
             </section>
             <section>
-                <h1>NOVEDADES</h1>
+                <h1 class="bold-text">NOVEDADES</h1>
             </section>
         </div>
-
-        <div class="recuadro">
-            <div id="imagen-texto" class="contenidoAdicional">
-                <!-- Aquí se cargarán las imágenes y textos de novedades -->
+        <MAIN>
+            <div class="recuadro">
+                <div id="imagen-texto" class="contenidoAdicional">
+                    <!-- Aquí se cargarán las imágenes y textos de novedades -->
+                </div>
+                <div class="navegacion">
+                    <button id="anterior">&#10094;</button>
+                    <button id="siguiente">&#10095;</button>
+                </div>
             </div>
-            <div class="navegacion">
-                <button id="anterior">&#10094;</button>
-                <button id="siguiente">&#10095;</button>
-            </div>
-        </div>
-            <div class="contenedor-imagenes">
-                <img src="img/Barra2.jpg" alt="Imagen 1">
-                <img src="img/Bombones3.jpg" alt="Imagen 2">
-                <img src="img/Alfajores1.jpg" alt="Imagen 3">
-            </div>
+            <section>
+                <h1 class="bold-text">Nuestros Productos</h1>
+                <div class="contenedor-imagenes">
+                    <img src="img/Barra2.jpg" alt="Imagen 1">
+                    <img src="img/Bombones3.jpg" alt="Imagen 2">
+                    <img src="img/Alfajores1.jpg" alt="Imagen 3">
+                </div>
+            </section>  
+        </MAIN>
         <footer>
             hola
         </footer>
-    </div>
+    </header>
     <script src="js/index.js"></script>
 </body>
+
 </html>
