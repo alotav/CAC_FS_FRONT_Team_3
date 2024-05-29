@@ -2,9 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-shadow: 1px 1px 3px grey;
 }
 
-.barraSuperior,
+
+/************************************************************* NAVAR */
+
+.barraSuperior{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        width: 100%;
+        background-color: rgba(169, 67, 189, 0.6); 
+        font-size: 20px;
+    }
 .opcionesBlanco ul{
     display: flex;
     align-items: center;
@@ -12,9 +24,20 @@
     padding: 15px;
     width: 100%;
 }
+.opcionesBlanco{
+    width: 70%;
+}
 .logo{
     width: 30%;
+    max-height: fit-content;
 }
+.logo img {
+    width: 100%;
+    max-width: 100px; /* Ajusta el valor según sea necesario */
+    height: auto;
+    object-fit: contain;
+}
+
 .opcionesBlanco a{
     text-decoration: none;
     color: inherit;
@@ -23,4 +46,88 @@
 .opcionesBlanco ul{
     list-style: none;
     justify-content: space-between;
+}
+
+
+/************************************************************* CONTACTO */
+
+.contacto{
+    background-image: url('../img/Fondo.jpg');
+    background-repeat: repeat;
+    /* Repite la imagen como mosaico */
+    background-size: 300px;
+    /* El tamaño original de la imagen */
+    background-color: rgba(255, 255, 255, 0.753);
+    /* Capa blanca semi-transparente */
+    background-blend-mode: overlay;
+    /* Mezcla la capa de color con la imagen de fondo */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+.contacto p{
+    width: 40%;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-size: 15px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(169, 67, 189, 0.5);
+    padding: 2em;
+    border-radius: 5px;
+}
+.form input{
+    width: 50%;
+    margin-bottom: 10px;
+}
+.form textarea{
+    width: 400px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.form button{
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    width: 75px;
+    margin-top: 13px;
+}
+
+
+/************************************************************* FOOTER */
+
+.contenidoFooter {
+    background-color: rgba(92, 82, 82, 0.7);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+
+.infoContacto, .redesSociales {
+    width: 45%; /* Define el ancho de cada columna */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.redesSociales li{
+    list-style: none;
+}
+
+.derechosReservados{
+    width: 100%; /* Define el ancho de cada columna */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background-color: rgba(92, 82, 82, 0.7);
 }
