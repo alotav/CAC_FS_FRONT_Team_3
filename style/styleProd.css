@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+    /* Asegura que el html y body ocupen toda la altura del viewport */
+    margin: 0 auto;
+    /* Elimina el margen por defecto */
+    font-weight: 900; /* Negrita intensa */
+    font-family: 'Source Sans Pro', sans-serif; /* Fuente cursiva */
+    font-style: italic; /* Cursiva */
+    font-size: 30px;
+    /* Puedes ajustar el tamaño según tus necesidades */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/Fondo.jpg');
+    /* Ruta de la imagen en la carpeta img */
+    background-repeat: repeat;
+    /* Repite la imagen como mosaico */
+    background-size: 300px;
+    /* El tamaño original de la imagen */
+    background-color: rgba(255, 255, 255, 0.753);
+    /* Capa blanca semi-transparente */
+    background-blend-mode: overlay;
+    /* Mezcla la capa de color con la imagen de fondo */
+}
+
+.contenedorPrincipal {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* Hace que el contenedor principal ocupe el espacio restante */
+    padding-top: 120px;
+    /* Ajuste el padding-top según la altura combinada de las dos barras */
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+.barraSuperior {
+    background-color: rgb(147, 4, 175);
+    /* Color rosa */
+    width: 100%;
+    height: 70px;
+    /* Ajustar la altura según sea necesario */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.barraSuperior .logo {
+    float: left;
+}
+
+.barraSuperior .barraNavegacion {
+    float: right;
+}
+
+.menuconteiner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.menuconteiner .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menuconteiner .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    display: block;
+}
+
+.menuconteiner .navbar ul li a:hover {
+    color: #FF5A2C;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    float: left;
+}
+
+.menuconteiner label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos para parrafos */
+.bold-text {
+    font-weight: 900;
+    /* Negrita intensa */
+    font-family: 'Source Sans Pro', sans-serif;
+    /* Fuente cursiva */
+    font-style: italic;
+    /* Cursiva */
+    font-size: 30px;
+    /* Puedes ajustar el tamaño según tus necesidades */
+}
+
+/* Estilos para la segunda barra de navegación */
+.menuconteiner {
+    background-color: rgb(0, 0, 0);
+    /* Color negro */
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    /* Letras blancas */
+    width: 100%;
+    height: 50px;
+    /* Ajustar la altura según sea necesario */
+    position: fixed;
+    top: 70px;
+    /* Ajustar según la altura de la primera barra */
+    left: 0;
+    z-index: 1000;
+}
+
+/* Estilos para la barra inferior */
+footer {
+    color: rgb(255, 0, 0);
+    /* Letras blancas */
+    width: 100%;
+    height: 150px;
+    /* Ajustar la altura según sea necesario */
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    text-align: center;
+    /* Centrar el texto */
+    line-height: 50px;
+    /* Centrar verticalmente el texto */
+    background-image: url('../img/BarraInferior.jpg');
+    /* Ruta de la imagen en la carpeta img */
+    background-repeat: repeat;
+    /* Repite la imagen como mosaico */
+    background-size: 20%;
+    /* El tamaño original de la imagen */
+    margin-top: auto;
+    /* Empuja el footer al final del contenedor */
+    background-color: rgba(255, 255, 255, 0.123);
+    /* Capa blanca semi-transparente */
+    background-blend-mode: overlay;
+    /* Mezcla la capa de color con la imagen de fondo */
+
+}
+
+.barraNegra {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.buttons{
+    display: flex;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px solid #1B1726;
+    border-radius: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: #000000;
+
+}
+
+.btn-1:hover{
+    background-color: rgb(147, 4, 175);
+}
+
+.prodConteiner{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.prodContent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.prod1 {
+    border: 1px solid #ccc; /* Añadido para mejor visualización */
+    padding: 10px; /* Añadido para mejor visualización */
+}
+
+.prod1 img {
+   
+        width: 350px;
+        height: 350px;
+        max-width: 100%;/* Asegurarse de que las imágenes no se desborden */
+}
+
+.prodTxt {
+    text-align: center; /* Centrar texto */
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price p {
+    font-size: 30px;
+}
+
+
+
+/*Edicion pantalla*/
+
+@media(max-width:991px) {
+    .menuconteiner {
+        padding: 20px;
+    }
+
+    .menuconteiner label {
+        display: initial;
+    }
+
+    .menuconteiner .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(147, 4, 175);
+        display: none;
+    }
+
+    .menuconteiner .navbar ul li a:hover {
+        color: #1B1726;
+    }
+
+    .menuconteiner .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .bold-text {
+        min-height: 0vh;
+        padding: 10px 30px 10px 30px;
+        text-align: center;
+        font-size: 17px;
+        margin-bottom: 5px;
+        justify-content: center;
+    }
+
+    .prodContent{    
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 30px;
+    }
+    
+    .prod1{
+        max-width: 85%;
+
+    }
+
+    .prod1 img{
+        width: 100%;   
+     
+        max-width: 100%;
+        max-height: 85%;       
+    }
+
+    .prodConteiner{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

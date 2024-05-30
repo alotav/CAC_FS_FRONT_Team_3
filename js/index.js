@@ -64,4 +64,7 @@ function mostrarImagenSiguiente() {
 // Llamar a la función para cargar la última imagen y su texto cuando la página cargue
 window.onload = cargarUltimaImagen;
 
-
+document.getElementById('refresh-link').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+    window.scrollTo(0, 0); // Desplazar al inicio de la página
+});
