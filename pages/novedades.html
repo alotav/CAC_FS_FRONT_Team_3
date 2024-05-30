@@ -1,28 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novedades</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./../style/nosotros.css">
+    <title>ChocolatesDeEnsueños</title>
 </head>
-<body>
-    <h1>Novedades</h1>
-    <div id="imagenes-novedades">
-        <div>
-            <img src="img/Semilla.jpeg" alt="Imagen 1" class="imagenAdicional">
-            <p class="contenidoAdicional">Nuestros Chocolates estan hechos de las semillas de mas alta calidad del fruto del árbol de cacao. Estas semillitas también se siembran para cultivar nuevos árboles de cacao y asegurar que ¡siempre tengamos suficiente chocolate en el mundo!.</p>
-        </div>
-        <div>
-            <img src="img/Fabricacion.jpg" alt="Imagen 2" class="imagenAdicional">
-            <p class="contenidoAdicional">Vestibulum vitae libero dapibus, pulvinar arcu vel, interdum tortor.</p>
-        </div>
-        <div>
-            <img src="img/imgBasica3.bmp" alt="Imagen 3" class="imagenAdicional">
-            <p class="contenidoAdicional">Quisque euismod purus ut nunc gravida, vel tincidunt felis viverra.</p>
-        </div>
-    </div>
-</body>
-</html>
 
+<body>
+    
+    <header class="contenedorPrincipal">
+        <div class="barraSuperior">
+            <div class="logo">
+                <img src="./../img/chocologo.png" alt="Logo de Chocolates de Ensueños">
+            </div>
+            <nav class="barraNavegacion">
+            </nav>
+        </div>
+
+        <div class="container">
+        <div class="menuconteiner">           
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="./../img/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <!-- Segunda barra con opciones -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./../index.html" id="refresh-link">Inicio</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./novedades.html">Novedades</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contenidoPrincipal">
+
+            <section class="novedades">
+                <h1>Novedades</h1>
+                <article>
+                    <h2>Nueva Línea de Chocolates Veganos</h2>
+                    <p>Nos complace anunciar el lanzamiento de nuestra nueva línea de chocolates veganos, hechos con los mejores ingredientes y sin comprometer el sabor. ¡Prueba estos deliciosos chocolates hoy mismo!</p>
+                </article>
+                <article>
+                    <h2>Promoción Especial del Mes</h2>
+                    <p>Durante este mes, disfruta de un 20% de descuento en todos nuestros chocolates artesanales. No te pierdas esta oportunidad de degustar nuestros productos a un precio especial.</p>
+                </article>
+                <article>
+                    <h2>Evento de Degustación</h2>
+                    <p>Acompáñanos en nuestro próximo evento de degustación donde podrás probar nuestras últimas creaciones y conocer más sobre el proceso de elaboración del chocolate. ¡Te esperamos!</p>
+                </article>
+
+                <div id="imagenes-novedades">
+                    <div>
+                        <img src="img/Semilla.jpeg" alt="Imagen 1" class="imagenAdicional">
+                        <p class="contenidoAdicional">Nuestros Chocolates estan hechos de las semillas de mas alta calidad del fruto del árbol de cacao. Estas semillitas también se siembran para cultivar nuevos árboles de cacao y asegurar que ¡siempre tengamos suficiente chocolate en el mundo!.</p>
+                    </div>
+                    <div>
+                        <img src="img/Fabricacion.jpg" alt="Imagen 2" class="imagenAdicional">
+                        <p class="contenidoAdicional">Vestibulum vitae libero dapibus, pulvinar arcu vel, interdum tortor.</p>
+                    </div>
+                    <div>
+                        <img src="img/imgBasica3.bmp" alt="Imagen 3" class="imagenAdicional">
+                        <p class="contenidoAdicional">Quisque euismod purus ut nunc gravida, vel tincidunt felis viverra.</p>
+                    </div>
+                    
+            </section>
+
+        </MAIN>
+        </div>   
+    </header>
+    <footer class="pieDePagina">
+        <div class="contenidoFooter">
+            <div class="infoContacto">
+                <div>
+                    <h2>Contáctanos</h2>
+                    <p>Dirección: Av. Principal #1234, Ciudad, País</p>
+                    <p>Teléfono: +123 456 789</p>
+                    <p>Correo electrónico: info@chocolatesensueños.com</p>
+                </div>
+            </div>
+            <div class="redesSociales">
+                <div>
+                    <h2>Síguenos</h2>
+                    <ul>
+                        <li><a href="#"><img src="./../img/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="./../img/twitter.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="./../img/instagram.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="derechosReservados">
+            <p>&copy; 2024 Chocolates de Ensueños. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
 
