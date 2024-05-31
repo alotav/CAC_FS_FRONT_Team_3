@@ -17,6 +17,8 @@
 
 html,
 body {
+    /* fuente */
+    font-family: 'Merriweather', serif;
     height: 100%;
     /* Asegura que el html y body ocupen toda la altura del viewport */
     margin: 0 auto;
@@ -52,7 +54,25 @@ body {
 
 .contenidoPrincipal {
     flex: 1;
-    /* Asegura que el contenido principal ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenidoPrincipal section {
+    margin-top: 30px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
 }
 
 .barraSuperior {
@@ -124,11 +144,15 @@ body {
 
 /* Estilos para parrafos */
 .bold-text {
-    font-weight: 900; /* Negrita intensa */
-    font-family: 'Source Sans Pro', sans-serif; /* Fuente cursiva */
-    font-style: italic; /* Cursiva */
-    font-size: 30px;
+    /* font-weight: 900; Negrita intensa */
+    /* font-family: 'Source Sans Pro', sans-serif; Fuente cursiva */
+    /* font-style: italic; Cursiva */
+    /* font-size: 30px; */
     /* Puedes ajustar el tamaño según tus necesidades */
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Estilos para la segunda barra de navegación */
@@ -153,7 +177,7 @@ body {
 
 /* Estilos para el recuadro */
 .recuadro {
-    border: 5px solid black;
+    /* border: 5px solid black; */
     box-sizing: border-box;
     display: flex;
     height: 400px;
@@ -165,6 +189,13 @@ body {
     overflow: hidden;
     /* Evitar que el contenido desborde */
     position: relative;
+
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Estilos para el contenido adicional */
@@ -176,7 +207,7 @@ body {
     padding: 15px;
     /* Ajustar según sea necesario */
     font-weight: 900; /* Negrita intensa */
-    font-family: 'Source Sans Pro', sans-serif; /* Fuente cursiva */
+    /* font-family: 'Source Sans Pro', sans-serif; Fuente cursiva */
     font-style: italic; /* Cursiva */
     font-size: 25px; /* Cambia la fuente a Arial*/
 }
@@ -304,17 +335,9 @@ body {
         width: 100%;
     }
 
-    .bold-text {
-        min-height: 0vh;
-        padding: 10px 30px 10px 30px;
-        text-align: center;
-        font-size: 17px;
-        margin-bottom: 5px;
-        justify-content: center;
-    }
 
     .recuadro {
-        border: 5px solid black;
+        /* border: 5px solid black; */
         box-sizing: border-box;
         display: flex;
         height: 300px;
@@ -327,6 +350,7 @@ body {
         overflow: hidden;
         /* Evitar que el contenido desborde */
         position: relative;
+
     }
 
     .contenidoAdicional {

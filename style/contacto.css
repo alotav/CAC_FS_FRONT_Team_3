@@ -9,72 +9,62 @@
 }
 
 :root {
-    --color-principal: rgb(178, 124, 189); ;
+    --color-principal: rgb(178, 124, 189);
     --color-secundario: rgba(92, 82, 82, 0.7);
     --color-formu: rgba(169, 67, 189, 0.6);
     --capa-transparente: rgba(255, 255, 255, 0.753);
     --spacing-base: 8px;
 }
 
-html,
-body {
+html, body {
+    font-family: 'Merriweather', serif;
     height: 100%;
-    /* Asegura que el html y body ocupen toda la altura del viewport */
-    margin: 0 auto;
-    /* Elimina el margen por defecto */
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     background-image: url('../img/Fondo.jpg');
-    /* Ruta de la imagen en la carpeta img */
     background-repeat: repeat;
-    /* Repite la imagen como mosaico */
     background-size: 300px;
-    /* El tamaño original de la imagen */
     background-color: var(--capa-transparente);
-    /* Capa blanca semi-transparente */
     background-blend-mode: overlay;
-    /* Mezcla la capa de color con la imagen de fondo */
 }
-
 
 .contenedorPrincipal {
     display: flex;
     flex-direction: column;
     flex: 1;
-    /* Hace que el contenedor principal ocupe el espacio restante */
     padding-top: 120px;
-    /* Ajuste el padding-top según la altura combinada de las dos barras */
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin: 0 auto;
 }
 
 .contenidoPrincipal {
     flex: 1;
-    /* Asegura que el contenido principal ocupe el espacio restante */
 }
 
 .barraSuperior {
     background-color: var(--color-principal);
-    /* Color rosa */
     width: 100%;
     height: 70px;
-    /* Ajustar la altura según sea necesario */
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
 }
 
-
-.logo{
+.logo {
     padding: 5px 0 5px 5px;
     width: 30%;
     max-height: fit-content;
 }
-.logo img{
+
+.logo img {
     width: 75px;
 }
 
@@ -89,7 +79,6 @@ body {
     right: 0;
     display: flex;
     align-items: center;
-
 }
 
 .menuconteiner .navbar ul li {
@@ -123,196 +112,165 @@ body {
     display: none;
 }
 
-/* Estilos para parrafos */
 .bold-text {
-    font-weight: 900; /* Negrita intensa */
-    font-family: 'Source Sans Pro', sans-serif; /* Fuente cursiva */
-    font-style: italic; /* Cursiva */
+    font-weight: 900;
+    font-style: italic;
     font-size: 30px;
-    /* Puedes ajustar el tamaño según tus necesidades */
 }
 
-/* Estilos para la segunda barra de navegación */
 .menuconteiner {
     background-color: rgb(0, 0, 0);
-    /* Color negro */
     background-position: center center;
     background-size: cover;
     display: flex;
     align-items: center;
     color: rgb(255, 255, 255);
-    /* Letras blancas */
     width: 100%;
     height: 50px;
-    /* Ajustar la altura según sea necesario */
     position: fixed;
     top: 70px;
-    /* Ajustar según la altura de la primera barra */
     left: 0;
     z-index: 1000;
 }
 
-/* Estilos para el recuadro */
 .recuadro {
     border: 5px solid black;
     box-sizing: border-box;
     display: flex;
     height: 400px;
-    /* Ajustar la altura según sea necesario */
     margin: 5% auto;
-    /* Centrar verticalmente y alinear horizontalmente */
     max-width: 60%;
-    /* Ajustar según sea necesario */
     overflow: hidden;
-    /* Evitar que el contenido desborde */
     position: relative;
 }
 
-/* Estilos para el contenido adicional */
 .contenidoAdicional {
     flex: 1;
-    /* El contenido ocupa el espacio restante */
     overflow-y: auto;
-    /* Agregar desplazamiento vertical si es necesario */
     padding: 15px;
-    /* Ajustar según sea necesario */
-    font-weight: 900; /* Negrita intensa */
-    font-family: 'Source Sans Pro', sans-serif; /* Fuente cursiva */
-    font-style: italic; /* Cursiva */
-    font-size: 25px; /* Cambia la fuente a Arial*/
+    font-weight: 900;
+    font-style: italic;
+    font-size: 25px;
 }
 
-/* Estilos para la imagen adicional */
 .imagenAdicional {
     flex: 1;
-    /* La imagen ocupa el espacio restante */
     object-fit: cover;
-    /* Ajustar la imagen para cubrir el espacio disponible */
     height: 100%;
-    /* La imagen ocupa toda la altura del recuadro */
     width: 50%;
-    /* La imagen ocupa la mitad del recuadro */
     float: right;
     margin-top: 1px;
-
 }
 
 .contenedor-imagenes {
     display: flex;
-    /* Hace que los elementos se coloquen en línea */
     justify-content: center;
-    /* Centra los elementos horizontalmente */
-
 }
 
 .contenedor-imagenes img {
     width: 20%;
-    /* Cada imagen ocupará un tercio del contenedor */
     height: auto;
-    /* Mantiene la relación de aspecto */
     margin-right: 50px;
-    /* Elimina el margen predeterminado */
     padding: 10px;
-    /* Elimina el relleno predeterminado */
     box-sizing: border-box;
-    /* Incluye el borde y el relleno en el ancho y alto total */
-
 }
 
-
-/* Estilos para la navegación */
 .navegacion {
     position: absolute;
     bottom: 10px;
     right: 20px;
     z-index: 2;
-    /* Asegura que las flechas estén sobre la imagen */
 }
-
 
 .barraNegra {
     text-align: center;
     padding-top: 15px;
 }
 
-
-
-/************************************************************* FOOTER */
+/* FOOTER */
 
 .contenidoFooter {
     background-color: var(--color-secundario);
     display: flex;
     justify-content: space-between;
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
 }
 
 .infoContacto, .redesSociales {
-    width: 45%; /* Define el ancho de cada columna */
+    width: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
-.redesSociales li{
+
+.redesSociales li {
     list-style: none;
 }
 
-.derechosReservados{
-    width: 100%; /* Define el ancho de cada columna */
+.derechosReservados {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
     background-color: rgba(92, 82, 82, 0.7);
 }
 
+/* CONTACTO */
 
-/************************************************************* CONTACTO */
-
-.contacto{
+.contacto {
     background-image: url('../img/Fondo.jpg');
     background-repeat: repeat;
-    /* Repite la imagen como mosaico */
     background-size: 300px;
-    /* El tamaño original de la imagen */
     background-color: var(--capa-transparente);
-    /* Capa blanca semi-transparente */
     background-blend-mode: overlay;
-    /* Mezcla la capa de color con la imagen de fondo */
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 0 50px 0;
-}
-.contacto p{
-    width: 40%;
-    text-align: center;
-    padding: 15px 0 15px 0;
-    font-size: 15px;
+    padding: 50px 0;
 }
 
-.form{
+.contacto p {
+    width: 40%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 15px;
+}
+.form-container{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-formu);
+    /* background-color: var(--color-formu); */
+    background-color: #F3E5F5; /* color lavanda claro */
     padding: 2em;
     border-radius: 5px;
 }
-.form input{
+
+.form input {
     width: 50%;
     margin-bottom: 10px;
 }
-.form textarea{
+
+.form textarea {
     width: 400px;
     height: 200px;
     margin-bottom: 10px;
 }
-.form button{
+
+.form button {
     background-color: aliceblue;
     padding: 5px;
     border-radius: 5px;
@@ -320,25 +278,20 @@ body {
     margin-top: 13px;
 }
 
-
 .radio-group {
     display: flex;
     flex-direction: row;
-    gap: 10px; /* Espacio entre los radio buttons */
-    margin-bottom: 15px; /* Espacio debajo del grupo de radio buttons */
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 .radio-group label {
-    margin-right: 20px; /* Espacio a la derecha de cada etiqueta */
+    margin-right: 20px;
 }
 
+/* MEDIA QUERY */
 
-
-/********************************** MEDIA QUERY´S */
-
-/*Edicion pantalla*/
-
-@media(max-width:991px) {
+@media (max-width: 991px) {
     .menuconteiner {
         padding: 20px;
     }
@@ -364,7 +317,7 @@ body {
         width: 100%;
     }
 
-    #menu:checked~.navbar {
+    #menu:checked ~ .navbar {
         display: initial;
     }
 
@@ -374,7 +327,7 @@ body {
 
     .bold-text {
         min-height: 0vh;
-        padding: 10px 30px 10px 30px;
+        padding: 10px 30px;
         text-align: center;
         font-size: 17px;
         margin-bottom: 5px;
@@ -386,14 +339,10 @@ body {
         box-sizing: border-box;
         display: flex;
         height: 300px;
-        /* Ajustar la altura según sea necesario */
         width: 100%;
         margin: 5% auto;
-        /* Centrar verticalmente y alinear horizontalmente */
         max-width: 90%;
-        /* Ajustar según sea necesario */
         overflow: hidden;
-        /* Evitar que el contenido desborde */
         position: relative;
     }
 
@@ -407,15 +356,9 @@ body {
 
     .imagenAdicional {
         object-fit: cover;
-        /* Ajustar la imagen para cubrir el espacio disponible */
         height: 100%;
-        /* La imagen ocupa toda la altura del recuadro */
         width: 50%;
-        /* La imagen ocupa la mitad del recuadro */
         float: right;
         margin-top: 1px;
     }
-
 }
-
-
