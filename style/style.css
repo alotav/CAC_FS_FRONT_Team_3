@@ -9,7 +9,8 @@
 }
 
 :root {
-    --color-principal: rgb(178, 124, 189); ;
+    --color-principal: rgb(178, 124, 189);
+    ;
     --color-secundario: rgba(92, 82, 82, 0.7);
     --capa-transparente: rgba(255, 255, 255, 0.753);
     --spacing-base: 8px;
@@ -59,6 +60,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .contenidoPrincipal section {
     margin-top: 30px;
     padding-top: 25px;
@@ -88,12 +90,13 @@ body {
 }
 
 
-.logo{
+.logo {
     padding: 5px 0 5px 5px;
     width: 30%;
     max-height: fit-content;
 }
-.logo img{
+
+.logo img {
     width: 75px;
 }
 
@@ -206,10 +209,13 @@ body {
     /* Agregar desplazamiento vertical si es necesario */
     padding: 15px;
     /* Ajustar según sea necesario */
-    font-weight: 900; /* Negrita intensa */
+    font-weight: 900;
+    /* Negrita intensa */
     /* font-family: 'Source Sans Pro', sans-serif; Fuente cursiva */
-    font-style: italic; /* Cursiva */
-    font-size: 25px; /* Cambia la fuente a Arial*/
+    font-style: italic;
+    /* Cursiva */
+    font-size: 25px;
+    /* Cambia la fuente a Arial*/
 }
 
 /* Estilos para la imagen adicional */
@@ -276,19 +282,23 @@ body {
     padding: 20px 0 20px 0;
 }
 
-.infoContacto, .redesSociales {
-    width: 45%; /* Define el ancho de cada columna */
+.infoContacto,
+.redesSociales {
+    width: 45%;
+    /* Define el ancho de cada columna */
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
-.redesSociales li{
+
+.redesSociales li {
     list-style: none;
 }
 
-.derechosReservados{
-    width: 100%; /* Define el ancho de cada columna */
+.derechosReservados {
+    width: 100%;
+    /* Define el ancho de cada columna */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -373,7 +383,3 @@ body {
     }
 
 }
-
-
-
-

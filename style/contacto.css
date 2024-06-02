@@ -16,13 +16,19 @@
     --spacing-base: 8px;
 }
 
-html, body {
+html,
+body {
     font-family: 'Merriweather', serif;
     height: 100%;
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Merriweather', serif;
 }
 
@@ -196,7 +202,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 0;
 }
 
-.infoContacto, .redesSociales {
+.infoContacto,
+.redesSociales {
     width: 45%;
     display: flex;
     align-items: center;
@@ -239,7 +246,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px 0;
     font-size: 15px;
 }
-.form-container{
+
+.form-container {
     background-color: #fff;
     border-radius: 8px;
     padding: 40px;
@@ -254,7 +262,8 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     /* background-color: var(--color-formu); */
-    background-color: #F3E5F5; /* color lavanda claro */
+    background-color: #F3E5F5;
+    /* color lavanda claro */
     padding: 2em;
     border-radius: 5px;
 }
@@ -317,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
     }
 
-    #menu:checked ~ .navbar {
+    #menu:checked~.navbar {
         display: initial;
     }
 

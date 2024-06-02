@@ -10,7 +10,8 @@
 }
 
 :root {
-    --color-principal: rgb(178, 124, 189); ;
+    --color-principal: rgb(178, 124, 189);
+    ;
     --color-secundario: rgba(92, 82, 82, 0.7);
     --color-formu: rgba(169, 67, 189, 0.6);
     --capa-transparente: rgba(255, 255, 255, 0.753);
@@ -18,7 +19,8 @@
 }
 
 
-html, body {
+html,
+body {
     font-family: 'Merriweather', serif;
     height: 100%;
     /* Asegura que el html y body ocupen toda la altura del viewport */
@@ -58,12 +60,13 @@ body {
     z-index: 1000;
 }
 
-.logo{
+.logo {
     padding: 5px 0 5px 5px;
     width: 30%;
     max-height: fit-content;
 }
-.logo img{
+
+.logo img {
     width: 75px;
 }
 
@@ -152,19 +155,23 @@ body {
     padding: 20px 0 20px 0;
 }
 
-.infoContacto, .redesSociales {
-    width: 45%; /* Define el ancho de cada columna */
+.infoContacto,
+.redesSociales {
+    width: 45%;
+    /* Define el ancho de cada columna */
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
-.redesSociales li{
+
+.redesSociales li {
     list-style: none;
 }
 
-.derechosReservados{
-    width: 100%; /* Define el ancho de cada columna */
+.derechosReservados {
+    width: 100%;
+    /* Define el ancho de cada columna */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,7 +187,7 @@ body {
     padding-top: 15px;
 }
 
-.buttons{
+.buttons {
     display: flex;
 }
 
@@ -190,17 +197,19 @@ body {
     border: 2px solid gray;
     border-radius: 5px;
     margin-right: 25px;
-    font-size: 16px; /* Añadido: Tamaño de fuente */
+    font-size: 16px;
+    /* Añadido: Tamaño de fuente */
     color: #000000;
     transition: transform 0.2s ease;
 }
 
-.btn-1:hover{
+.btn-1:hover {
     background-color: var(--color-principal);
-    transform: scale(1.1); /* Añadido: Escala del 110% al hacer hover */
+    transform: scale(1.1);
+    /* Añadido: Escala del 110% al hacer hover */
 }
 
-.prodConteiner{
+.prodConteiner {
     max-width: 1200px;
     margin: 0 auto;
     background-image: url('../img/Fondo.jpg');
@@ -215,32 +224,37 @@ body {
     /* Mezcla la capa de color con la imagen de fondo */
 }
 
-.prodContent{
+.prodContent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
 }
 
 .prod1 {
-    border: 1px solid #ccc; /* Añadido para mejor visualización */
-    padding: 10px; /* Añadido para mejor visualización */
-    background-color: #F3E5F5; /* color lavanda claro */
+    border: 1px solid #ccc;
+    /* Añadido para mejor visualización */
+    padding: 10px;
+    /* Añadido para mejor visualización */
+    background-color: #F3E5F5;
+    /* color lavanda claro */
     border-radius: 4px;
     margin-bottom: 10px;
 }
 
 .prod1 img {
-   
-        width: 350px;
-        height: 350px;
-        max-width: 100%;/* Asegurarse de que las imágenes no se desborden */
+
+    width: 350px;
+    height: 350px;
+    max-width: 100%;
+    /* Asegurarse de que las imágenes no se desborden */
 }
 
 .prodTxt {
-    text-align: center; /* Centrar texto */
+    text-align: center;
+    /* Centrar texto */
 }
 
-.price{
+.price {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -297,25 +311,25 @@ body {
         justify-content: center;
     }
 
-    .prodContent{    
+    .prodContent {
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
         padding: 30px;
     }
-    
-    .prod1{
+
+    .prod1 {
         max-width: 85%;
 
     }
 
-    .prod1 img{
-        width: 100%;   
-     
+    .prod1 img {
+        width: 100%;
+
         max-width: 100%;
-        max-height: 85%;       
+        max-height: 85%;
     }
 
-    .prodConteiner{
+    .prodConteiner {
         max-width: 1200px;
         margin: 0 auto;
     }
